@@ -3,6 +3,19 @@ Version: 0.1.5
 Depends: Rcpp (>= 0.12.7), mvQuad, ucminf, numDeriv, randtoolbox
 LinkingTo: Rcpp
 License: GPL-3
-MD5sum: 0b22e57b0ddf8b3d2f825ec9544d28cf
+MD5sum: 8a120209b73fdf588bf21cf5ee27ea60
 NeedsCompilation: yes
+
+Package: restorepoint
+Version: 0.1.8
+License: GPL (>= 2)
+MD5sum: 4086bd26c20d5c4edf762418b0b2627e
+NeedsCompilation: no
+
+Package: stringtools
+Version: 0.01
+Depends: stringr
+Suggests: data.table
+MD5sum: 0a2c42609f8f0e43000f3fb96bb935e0
+NeedsCompilation: no
 
