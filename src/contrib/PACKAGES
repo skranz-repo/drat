@@ -1,0 +1,8 @@
+Package: BLPestimatoR
+Version: 0.1.5
+Depends: Rcpp (>= 0.12.7), mvQuad, ucminf, numDeriv, randtoolbox
+LinkingTo: Rcpp
+License: GPL-3
+MD5sum: 0b22e57b0ddf8b3d2f825ec9544d28cf
+NeedsCompilation: yes
+

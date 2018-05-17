@@ -1,0 +1,16 @@
+Package: BLPestimatoR
+Version: 0.1.5
+Depends: Rcpp (>= 0.12.7), mvQuad, ucminf, numDeriv, randtoolbox
+LinkingTo: Rcpp
+License: GPL-3
+Archs: x64
+
+Package: restorepoint
+Version: 0.1.8
+License: GPL (>= 2)
+
+Package: stringtools
+Version: 0.01
+Depends: stringr
+Suggests: data.table
+
