@@ -5,26 +5,35 @@ example.drat = function() {
   repodir = "D:/libraries/drat/drat"
   libdir = "D:/libraries"
   
-  insert.drat("BLPestimator", repodir,libdir)
+  insert.drat("BLPestimatoR", repodir,libdir)
   insert.drat("stringtools", repodir,libdir)
   insert.drat("restorepoint", repodir,libdir)
+
+
+  insert.drat("rmdtools", repodir,libdir)
+  insert.drat("shinyEvents", repodir,libdir)
+  insert.drat("dplyrExtras", repodir,libdir)
+  insert.drat("regtools", repodir,libdir)
+  insert.drat("RTutor", repodir,libdir)
+ 
   
   
-  drat::addRepo("skranz-repo")
+  options(repos = unique(c("https://skranz-repo.github.io/drat/",getOption("repos"))))
+  
+  install.packages("BLPestimatoR")
+  
+  install.packages("restorepoint")
   install.packages("restorepoint")
   
-  install.packages("restorepoint",repos = "https://skranz-repo.github.io/drat/")
-  
-  install.packages("restorepoint",repos = "file:D:/libraries/drat/drat")
 }
 
 insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE) {
   
   dir = file.path(libdir, pkg, pkg)
   src = devtools::build(dir)
-  insertPackage(src, repodir)
+  drat::insertPackage(src, repodir)
   if (add.binary) {
     bin = devtools::build(dir, binary = TRUE, args = c('--preclean'))
-    insertPackage(bin, repodir)
+    drat::insertPackage(bin, repodir)
   }
 }
