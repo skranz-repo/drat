@@ -10,8 +10,10 @@ example.drat = function() {
   insert.drat("restorepoint", repodir,libdir)
   
   
-  drat::addRepo("skranz")
-  install.packages("stringtools")
+  drat::addRepo("skranz-repo")
+  install.packages("restorepoint")
+  
+  install.packages("stringtools",repos = "https://skranz-repo.github.io/drat/")
 }
 
 insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg)) {
