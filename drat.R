@@ -18,12 +18,13 @@ example.drat = function() {
   install.packages("restorepoint",repos = "file:D:/libraries/drat/drat")
 }
 
-insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg)) {
+insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE) {
   
   dir = file.path(libdir, pkg, pkg)
   src = devtools::build(dir)
   insertPackage(src, repodir)
-  bin = devtools::build(dir, binary = TRUE, args = c('--preclean'))
-  insertPackage(bin, repodir)
- 
+  if (add.binary) {
+    bin = devtools::build(dir, binary = TRUE, args = c('--preclean'))
+    insertPackage(bin, repodir)
+  }
 }
