@@ -27,9 +27,16 @@ NeedsCompilation: no
 
 Package: rmdtools
 Version: 0.2.6
-Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils,
-       markdown, commonmark, knitr
+Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils, markdown, commonmark, knitr
 MD5sum: acd1cc5c26fdbeeb5c62c1a7f620597a
+NeedsCompilation: no
+
+Package: RTutor
+Version: 2015.12.16
+Depends: shinyEvents,markdown,whisker, stringr, stringtools, data.table, tibble, dplyr, shiny (>= 0.11.1),
+            dplyrExtras, shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl, knitr, jsonlite, DT,
+            memoise
+MD5sum: 461699c6354b28246feaaa90f4d3e242
 NeedsCompilation: no
 
 Package: shinyEvents

@@ -14,7 +14,7 @@ example.drat = function() {
   insert.drat("shinyEvents", repodir,libdir)
   insert.drat("dplyrExtras", repodir,libdir)
   insert.drat("regtools", repodir,libdir)
-  insert.drat("RTutor", repodir,libdir)
+  insert.drat("RTutor", repodir,libdir, add.source = FALSE)
  
   
   
@@ -27,11 +27,13 @@ example.drat = function() {
   
 }
 
-insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE) {
+insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE) {
   
   dir = file.path(libdir, pkg, pkg)
-  src = devtools::build(dir)
-  drat::insertPackage(src, repodir)
+  if (add.source) {
+    src = devtools::build(dir)
+    drat::insertPackage(src, repodir)
+  }
   if (add.binary) {
     bin = devtools::build(dir, binary = TRUE, args = c('--preclean'))
     drat::insertPackage(bin, repodir)
