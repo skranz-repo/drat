@@ -2,142 +2,104 @@ Package: bbsvg
 Version: 0.1
 Depends: dplyr, tidyr, restorepoint,codeUtils, stringtools, rmdtools, whisker, RColorBrewer, dplyrExtras,
             latexsvg, digest
-MD5sum: 6758caca4b6b263a8969f15548a46499
-NeedsCompilation: no
 
 Package: BLPestimatoR
 Version: 0.1.5
 Depends: Rcpp (>= 0.12.7), mvQuad, ucminf, numDeriv, randtoolbox
 LinkingTo: Rcpp
 License: GPL-3
-MD5sum: 8a120209b73fdf588bf21cf5ee27ea60
-NeedsCompilation: yes
+Archs: i386, x64
 
 Package: codeUtils
 Version: 0.1
 Depends: restorepoint
-MD5sum: 87362ab3a05583077f8340ae919ae934
-NeedsCompilation: no
 
 Package: dbmisc
 Version: 0.1
 Depends: DBI, restorepoint, yaml, stringtools
-MD5sum: d8ca2a20eea34fcdad2d09af480bfe79
-NeedsCompilation: no
 
 Package: ddsim
 Version: 0.1
 Depends: dplyr,restorepoint, stringtools, rmdtools, nleqslv, symbeqs, dygraphs
-MD5sum: 81c5bd74f8c556270f55a20851baae75
-NeedsCompilation: no
 
 Package: dplyrExtras
 Version: 0.1.3
 Depends: data.table,dplyr, dtplyr
-MD5sum: 5d25461461f8dde16d2b40c4c5878135
-NeedsCompilation: no
 
 Package: rampl
 Version: 0.02
 Depends: stringr, rgmpl, rneos, data.table, restorepoint
 License: GPL (>= 2)
-MD5sum: 61d6c55b671acf4da54131cebc421505
-NeedsCompilation: no
 
 Package: regtools
 Version: 0.2
 Depends: restorepoint, sandwich, mvtnorm, dplyr
 Imports: mfx, ggplot2, tidyr, texreg, stargazer
-MD5sum: d2447d3fe7223a8de9477d46da609a2c
-NeedsCompilation: no
 
 Package: repgame
 Version: 0.3
 Depends: restorepoint, rowmins, slam, glpkAPI
 Imports: Rcpp (>= 0.11.2)
 LinkingTo: Rcpp
-MD5sum: 1528f284910f4acc3d4eb8bb5ed9f205
-NeedsCompilation: yes
+Archs: i386, x64
 
 Package: restorepoint
 Version: 0.1.8
 License: GPL (>= 2)
-MD5sum: 4086bd26c20d5c4edf762418b0b2627e
-NeedsCompilation: no
 
 Package: rgmpl
 Version: 0.04
 Depends: stringr, glpkAPI
 License: GPL (>= 2)
-MD5sum: fa0f0355b3e452a7e3f5859d7969d11b
-NeedsCompilation: no
+
+Package: RMaxima
+Version: 0.01
+Depends: stringtools, stringr
+License: GPL (>= 2)
 
 Package: rmdtools
 Version: 0.2.6
 Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils, markdown, commonmark, knitr
-MD5sum: acd1cc5c26fdbeeb5c62c1a7f620597a
-NeedsCompilation: no
-
-Package: rowmins
-Version: 1.0
-Depends: Rcpp (>= 0.9.15)
-LinkingTo: Rcpp
-MD5sum: 3eb27760a00a88201ceec56d3d2664c4
-NeedsCompilation: yes
 
 Package: RSGSolve
 Version: 0.1.0
 Depends: jsonlite, restorepoint
 Imports: Rcpp (>= 0.12.7)
 LinkingTo: Rcpp
-MD5sum: 6065de173f369371a05570e513db46e1
-NeedsCompilation: yes
+Archs: i386, x64
 
 Package: RTutor
 Version: 2015.12.16
 Depends: shinyEvents,markdown,whisker, stringr, stringtools, data.table, tibble, dplyr, shiny (>= 0.11.1),
             dplyrExtras, shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl, knitr, jsonlite, DT,
             memoise
-MD5sum: 461699c6354b28246feaaa90f4d3e242
-NeedsCompilation: no
 
 Package: shinyEvents
 Version: 2.3
 Depends: shiny, restorepoint
-MD5sum: 9858aa093b7ab01728680721612b140a
-NeedsCompilation: no
 
 Package: shinyEventsUI
 Version: 0.1.1
 Depends: shiny, shinyEvents, jsonlite, stringtools, dplyr
-MD5sum: b0645c7cecb5549c5daf16480a82c1ec
-NeedsCompilation: no
 
 Package: sktools
 Version: 0.05
 Depends: restorepoint, data.table, lubridate, stringr, R.utils
 License: GPL (>= 2)
-MD5sum: 95a9f19f2f7623613d02b8c732d788a3
-NeedsCompilation: no
 
 Package: skUtils
 Version: 0.1
 Imports: Rcpp (>= 0.11.2)
 LinkingTo: Rcpp
 License: GPL (>= 2)
-MD5sum: c42e3661c9ab2c7348ef79014a18264b
-NeedsCompilation: yes
+Archs: i386, x64
 
 Package: stringtools
 Version: 0.01
 Depends: stringr
 Suggests: data.table
-MD5sum: 0a2c42609f8f0e43000f3fb96bb935e0
-NeedsCompilation: no
 
 Package: symbeqs
 Version: 0.1
 Depends: restorepoint, codeUtils, dplyr, Deriv, optims
 Suggests: shiny, shinyEvents
-MD5sum: eb6a52684a7487b91590df6c70ab2942
-NeedsCompilation: no

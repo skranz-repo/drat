@@ -37,7 +37,7 @@ example.drat = function() {
   insert.drat("RSGSolve", repodir, libdir)
   
   insert.drat("RMaxima", repodir, libdir)
-  insert.drat("LyxMaxima", repodir, libdir)
+  #insert.drat("LyxMaxima", repodir, libdir)
   
   
   options(repos = unique(c("https://skranz-repo.github.io/drat/",getOption("repos"))))
@@ -49,8 +49,8 @@ example.drat = function() {
   
 }
 
-insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE) {
-
+insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=!TRUE) {
+  library(drat)
   if (add.source) {
     src = devtools::build(pkg.dir)
     drat::insertPackage(src, repodir)
