@@ -7,6 +7,7 @@ example.drat = function() {
   
   library(devtools)
 assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(version_min = "3.3.0", version_max = "99.99.99", path = "bin"))), "devtools")
+  find_rtools()
   
   insert.drat("BLPestimatoR", repodir,libdir)
   insert.drat("stringtools", repodir,libdir)
@@ -22,7 +23,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   
   
   insert.drat("repgame", repodir, libdir)
-  insert.drat("rowmins", repodir, libdir, pkg.dir=file.path(libdir, "rowmins"))
+  insert.drat("rowmins", repodir, libdir)
   
   insert.drat("shinyEventsUI", repodir, libdir)
   insert.drat("codeUtils", repodir, libdir)
@@ -46,6 +47,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   options(repos = unique(c("https://skranz-repo.github.io/drat/",getOption("repos"))))
   
   install.packages("BLPestimatoR")
+  install.packages("rowmins")
   
   install.packages("restorepoint")
   install.packages("restorepoint")
