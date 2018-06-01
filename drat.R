@@ -5,6 +5,9 @@ example.drat = function() {
   repodir = "D:/libraries/drat/drat"
   libdir = "D:/libraries"
   
+  library(devtools)
+assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(version_min = "3.3.0", version_max = "99.99.99", path = "bin"))), "devtools")
+  
   insert.drat("BLPestimatoR", repodir,libdir)
   insert.drat("stringtools", repodir,libdir)
   insert.drat("restorepoint", repodir,libdir)
