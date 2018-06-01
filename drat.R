@@ -15,7 +15,7 @@ example.drat = function() {
   insert.drat("dplyrExtras", repodir,libdir)
   insert.drat("regtools", repodir,libdir)
   insert.drat("RTutor", repodir,libdir, add.source = FALSE)
- 
+  drat::insertPackage("D:/libraries/drat/RTutor_2015.12.16.tar.gz", repodir)
   
   
   options(repos = unique(c("https://skranz-repo.github.io/drat/",getOption("repos"))))
