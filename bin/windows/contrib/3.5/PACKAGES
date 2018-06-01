@@ -26,6 +26,13 @@ Package: dplyrExtras
 Version: 0.1.3
 Depends: data.table,dplyr, dtplyr
 
+Package: dyngame
+Version: 0.1
+Depends: rgmpl, restorepoint, skUtils
+Imports: Rcpp (>= 0.11.2)
+LinkingTo: Rcpp
+Archs: i386, x64
+
 Package: rampl
 Version: 0.02
 Depends: stringr, rgmpl, rneos, data.table, restorepoint

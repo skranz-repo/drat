@@ -19,7 +19,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("dplyrExtras", repodir,libdir)
   insert.drat("regtools", repodir,libdir)
   insert.drat("RTutor", repodir,libdir, add.source = FALSE)
-  drat::insertPackage("D:/libraries/drat/RTutor_2015.12.16.tar.gz", repodir)
+  #drat::insertPackage("D:/libraries/drat/RTutor_2015.12.16.tar.gz", repodir)
   
   
   insert.drat("repgame", repodir, libdir)
@@ -47,11 +47,12 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   options(repos = unique(c("https://skranz-repo.github.io/drat/",getOption("repos"))))
   
   install.packages("BLPestimatoR")
-  install.packages("rowmins")
+  install.packages("skUtils")
   
   install.packages("restorepoint")
   install.packages("restorepoint")
   
+  install.packages("repgame", repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
 }
 
 insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=!TRUE) {
