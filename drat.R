@@ -18,6 +18,28 @@ example.drat = function() {
   drat::insertPackage("D:/libraries/drat/RTutor_2015.12.16.tar.gz", repodir)
   
   
+  insert.drat("repgame", repodir, libdir)
+  insert.drat("rowmins", repodir, libdir, pkg.dir=file.path(libdir, "rowmins"))
+  
+  insert.drat("shinyEventsUI", repodir, libdir)
+  insert.drat("codeUtils", repodir, libdir)
+  insert.drat("dbmisc", repodir, libdir)
+  insert.drat("ddsim", repodir, libdir)
+  insert.drat("symbeqs", repodir, libdir)
+  insert.drat("bbsvg", repodir, libdir)
+  
+  insert.drat("rgmpl", repodir, libdir)
+  insert.drat("rampl", repodir, libdir)
+  insert.drat("sktools", repodir, libdir)
+  
+  insert.drat("skUtils", repodir, libdir)
+  insert.drat("dyngame", repodir, libdir)
+  insert.drat("RSGSolve", repodir, libdir)
+  
+  insert.drat("RMaxima", repodir, libdir)
+  insert.drat("LyxMaxima", repodir, libdir)
+  
+  
   options(repos = unique(c("https://skranz-repo.github.io/drat/",getOption("repos"))))
   
   install.packages("BLPestimatoR")
@@ -28,14 +50,13 @@ example.drat = function() {
 }
 
 insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE) {
-  
-  dir = file.path(libdir, pkg, pkg)
+
   if (add.source) {
-    src = devtools::build(dir)
+    src = devtools::build(pkg.dir)
     drat::insertPackage(src, repodir)
   }
   if (add.binary) {
-    bin = devtools::build(dir, binary = TRUE, args = c('--preclean'))
+    bin = devtools::build(pkg.dir, binary = TRUE, args = c('--preclean'))
     drat::insertPackage(bin, repodir)
   }
 }
