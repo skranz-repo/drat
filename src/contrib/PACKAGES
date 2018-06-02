@@ -89,9 +89,10 @@ NeedsCompilation: no
 
 Package: rowmins
 Version: 1.0
-Depends: Rcpp (>= 0.9.15)
+Imports: Rcpp (>= 0.12.17)
 LinkingTo: Rcpp
-MD5sum: 3eb27760a00a88201ceec56d3d2664c4
+License: GPL (>= 2)
+MD5sum: c06d49edcac7231419a8deb65e5667f9
 NeedsCompilation: yes
 
 Package: RSGSolve
