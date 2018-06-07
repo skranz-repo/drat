@@ -53,6 +53,10 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   install.packages("restorepoint")
   
   install.packages("repgame", repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
+  
+  install.packages("dyngame")
+
+  install.packages("RTutor")  
 }
 
 insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE) {

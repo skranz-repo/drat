@@ -1,7 +1,8 @@
 Package: bbsvg
 Version: 0.1
-Depends: dplyr, tidyr, restorepoint,codeUtils, stringtools, rmdtools, whisker,
-         RColorBrewer, dplyrExtras, latexsvg, digest
+Depends: dplyr, tidyr, restorepoint,codeUtils, stringtools,
+       rmdtools, whisker, RColorBrewer, dplyrExtras, latexsvg,
+       digest
 
 Package: BLPestimatoR
 Version: 0.1.5
@@ -20,7 +21,8 @@ Depends: DBI, restorepoint, yaml, stringtools
 
 Package: ddsim
 Version: 0.1
-Depends: dplyr,restorepoint, stringtools, rmdtools, nleqslv, symbeqs, dygraphs
+Depends: dplyr,restorepoint, stringtools, rmdtools, nleqslv,
+       symbeqs, dygraphs
 
 Package: dplyrExtras
 Version: 0.1.3
@@ -61,8 +63,8 @@ License: GPL (>= 2)
 
 Package: rmdtools
 Version: 0.2.6
-Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils, markdown,
-         commonmark, knitr
+Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils,
+       markdown, commonmark, knitr
 
 Package: rowmins
 Version: 1.0
@@ -80,9 +82,10 @@ Archs: i386, x64
 
 Package: RTutor
 Version: 2015.12.16
-Depends: shinyEvents,markdown,whisker, stringr, stringtools, data.table, tibble,
-         dplyr, shiny (>= 0.11.1), dplyrExtras, shinyAce, shinyBS (>= 0.61),
-         hwriter, restorepoint, RCurl, knitr, jsonlite, DT, memoise
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+       data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+       shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+       knitr, jsonlite, DT, memoise
 
 Package: shinyEvents
 Version: 2.3
