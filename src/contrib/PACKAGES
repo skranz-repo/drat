@@ -82,8 +82,8 @@ NeedsCompilation: no
 
 Package: rmdtools
 Version: 0.2.6
-Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils, markdown,
-         commonmark, knitr
+Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils, markdown, commonmark,
+         knitr
 MD5sum: acd1cc5c26fdbeeb5c62c1a7f620597a
 NeedsCompilation: no
 
@@ -106,16 +106,16 @@ NeedsCompilation: yes
 Package: RTutor
 Version: 2018.06.08
 Depends: shinyEvents,markdown,whisker, stringr, stringtools, data.table, tibble,
-         dplyr, shiny (>= 0.11.1), dplyrExtras, shinyAce, shinyBS (>= 0.61),
-         hwriter, restorepoint, RCurl, knitr, jsonlite, DT, memoise, yaml
+         dplyr, shiny (>= 0.11.1), dplyrExtras, shinyAce, shinyBS (>= 0.61), hwriter,
+         restorepoint, RCurl, knitr, jsonlite, DT, memoise, yaml
 MD5sum: 0f1012da9d527c8c63cc2c539c7e87d9
 NeedsCompilation: no
 
 Package: RTutorIncentiveContracts
 Version: 0.1
-Depends: RTutor, readstata13, dplyr, stargazer, ggplot2, gridExtra, lfe,
-         regtools, ggmap, rmarkdown
-MD5sum: 6b8bdc7f2b1da27d7bfd6fd44003767a
+Depends: RTutor, readstata13, dplyr, stargazer, ggplot2, gridExtra, lfe, regtools,
+         ggmap, rmarkdown
+MD5sum: 17255e2e858bd1b901eacf3187d15f62
 NeedsCompilation: no
 
 Package: shinyEvents
