@@ -104,11 +104,11 @@ MD5sum: 6065de173f369371a05570e513db46e1
 NeedsCompilation: yes
 
 Package: RTutor
-Version: 2018.06.08
+Version: 2018.11.16
 Depends: shinyEvents,markdown,whisker, stringr, stringtools, data.table, tibble,
          dplyr, shiny (>= 0.11.1), dplyrExtras, shinyAce, shinyBS (>= 0.61), hwriter,
          restorepoint, RCurl, knitr, jsonlite, DT, memoise, yaml
-MD5sum: 0f1012da9d527c8c63cc2c539c7e87d9
+MD5sum: 78192f541d347feee09b4b54dd8c2559
 NeedsCompilation: no
 
 Package: RTutorIncentiveContracts
