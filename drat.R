@@ -2,12 +2,14 @@
 
 example.drat = function() {
   library(drat)
-  repodir = "D:/libraries/drat/drat"
+  repodir = "D:/libraries/drat/drat"; download.dir = "D:/libraries/drat"
   libdir = "D:/libraries"
   
   library(devtools)
 assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(version_min = "3.3.0", version_max = "99.99.99", path = "bin"))), "devtools")
   find_rtools()
+  
+  github.to.drat("felsti/RTutorECars",download.dir, repodir, skip.download = TRUE)
   
   insert.drat("BLPestimatoR", repodir,libdir)
   insert.drat("stringtools", repodir,libdir)
@@ -73,4 +75,29 @@ insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg
     bin = devtools::build(pkg.dir, binary = TRUE, args = c('--preclean'))
     drat::insertPackage(bin, repodir)
   }
+}
+
+github.to.drat = function(rep,download.dir = getwd(),repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=FALSE, add.source=TRUE, skip.download=FALSE) {
+  library(stringtools)
+  pkg = str.right.of(rep, "/")
+
+  pkg.dir = download.github.package(rep, download.dir, skip.download=skip.download)
+  insert.drat(pkg,repodir=repodir, pkg.dir=pkg.dir, add.binary = add.binary, add.source=add.source)
+  
+}
+
+download.github.package = function(rep,   download.dir = getwd(), skip.download=FALSE) {
+
+  library(stringtools)
+  pkg = str.right.of(rep, "/")
+  if (!skip.download) {
+    zip.url = paste0("https://github.com/", rep, "/archive/master.zip")
+    zip.file = file.path(download.dir,paste0(pkg,".zip"))
+    download.file(zip.url,destfile = zip.file)
+    unzip(zip.file, exdir=download.dir)
+  } else {
+    cat("\nskip github download of ", rep)
+  }
+  pkg.dir = paste0(download.dir, "/", pkg,"-Master")
+  return(pkg.dir)
 }

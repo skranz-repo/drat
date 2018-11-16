@@ -111,6 +111,13 @@ Depends: shinyEvents,markdown,whisker, stringr, stringtools, data.table, tibble,
 MD5sum: 78192f541d347feee09b4b54dd8c2559
 NeedsCompilation: no
 
+Package: RTutorECars
+Version: 1.0
+Depends: RTutor, dplyr, ggplot2, choroplethr, lfe, gridExtra, evd, htmlTable,
+         stargazer, magick, reshape2
+MD5sum: a8865a61af0d2f798e1a2f6897f26e55
+NeedsCompilation: no
+
 Package: RTutorIncentiveContracts
 Version: 0.1
 Depends: RTutor, readstata13, dplyr, stargazer, ggplot2, gridExtra, lfe, regtools,
