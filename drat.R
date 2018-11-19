@@ -9,7 +9,7 @@ example.drat = function() {
 assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(version_min = "3.3.0", version_max = "99.99.99", path = "bin"))), "devtools")
   find_rtools()
   
-  github.to.drat("felsti/RTutorECars",download.dir, repodir, skip.download = TRUE)
+  github.to.drat("felsti/RTutorECars",download.dir, repodir, skip.download = FALSE)
   
   insert.drat("BLPestimatoR", repodir,libdir)
   insert.drat("stringtools", repodir,libdir)
