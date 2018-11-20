@@ -111,7 +111,7 @@ Depends: shinyEvents,markdown,whisker, stringr, stringtools, data.table,
         (>= 0.61), hwriter, restorepoint, RCurl, knitr, jsonlite, DT,
         memoise, yaml
 Suggests: digest
-MD5sum: ecd53e53d0a4cd2972fee8c5a5f1818c
+MD5sum: 5df7eb9fa14c8aadb486e5903a6e4414
 NeedsCompilation: no
 
 Package: RTutorECars
