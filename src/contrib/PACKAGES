@@ -54,10 +54,10 @@ MD5sum: 61d6c55b671acf4da54131cebc421505
 NeedsCompilation: no
 
 Package: regtools
-Version: 0.2
+Version: 2018.11.20
 Depends: restorepoint, sandwich, mvtnorm, dplyr
 Imports: mfx, ggplot2, tidyr, texreg, stargazer
-MD5sum: d2447d3fe7223a8de9477d46da609a2c
+MD5sum: 650c3fcbdcd01cc5493d9e6b35427b09
 NeedsCompilation: no
 
 Package: repgame
