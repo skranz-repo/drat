@@ -21,7 +21,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("dplyrExtras", repodir,libdir)
   insert.drat("regtools", repodir,libdir)
   #insert.drat("RTutor", repodir,libdir, add.source = FALSE)
-  drat::insertPackage("D:/libraries/drat/RTutor_2018.11.19.tar.gz", repodir)
+  drat::insertPackage("RTutor_2019.02.04.tar.gz", repodir)
   #
   insert.drat("RTutorIncentiveContracts", repodir, pkg.dir="D:/libraries/RTutor/examples/IncentiveContracts/RTutorIncentiveContracts", add.binary=FALSE)
   #drat::insertPackage("D:/libraries/drat/RTutorIncentiveContracts_0.1.tar.gz", repodir)
