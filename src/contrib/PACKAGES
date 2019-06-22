@@ -46,6 +46,22 @@ LinkingTo: Rcpp
 MD5sum: 8aaa5455f6b2943ba526d287daf1e922
 NeedsCompilation: yes
 
+Package: gtree
+Version: 0.0.1
+Depends: restorepoint,stringtools, yaml, data.table,dplyr,
+       dplyrExtras, codeUtils, tidyr, digest, sys, lubridate,
+       jsonlite, whisker, matrixStats, lazyeval
+Suggests: knitr, rmarkdown
+MD5sum: 1e08b81d49db1ba78a1fa81f5c975995
+NeedsCompilation: no
+
+Package: gtreeWebPlay
+Version: 0.0.1
+Depends: gtree, shinyEvents, shiny, rmdtools
+Suggests: knitr,rmarkdown
+MD5sum: e11fd13763504986cb1f4812420d5ac8
+NeedsCompilation: no
+
 Package: rampl
 Version: 0.02
 Depends: stringr, rgmpl, rneos, data.table, restorepoint
@@ -82,10 +98,10 @@ MD5sum: 0fefa26c9ef6de1c09c7379522202a6a
 NeedsCompilation: no
 
 Package: rmdtools
-Version: 0.2.6
+Version: 0.2.7
 Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils,
        markdown, commonmark, knitr
-MD5sum: acd1cc5c26fdbeeb5c62c1a7f620597a
+MD5sum: 9c9357013561abe32bfd86074bcddcd6
 NeedsCompilation: no
 
 Package: rowmins

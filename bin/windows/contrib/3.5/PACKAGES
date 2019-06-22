@@ -34,6 +34,18 @@ Imports: Rcpp (>= 0.11.2)
 LinkingTo: Rcpp
 Archs: i386, x64
 
+Package: gtree
+Version: 0.0.1
+Depends: restorepoint,stringtools, yaml, data.table,dplyr,
+       dplyrExtras, codeUtils, tidyr, digest, sys, lubridate,
+       jsonlite, whisker, matrixStats, lazyeval
+Suggests: knitr, rmarkdown
+
+Package: gtreeWebPlay
+Version: 0.0.1
+Depends: gtree, shinyEvents, shiny, rmdtools
+Suggests: knitr,rmarkdown
+
 Package: rampl
 Version: 0.02
 Depends: stringr, rgmpl, rneos, data.table, restorepoint
@@ -61,7 +73,7 @@ Depends: stringr, glpkAPI
 License: GPL (>= 2)
 
 Package: rmdtools
-Version: 0.2.6
+Version: 0.2.7
 Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils,
        markdown, commonmark, knitr
 

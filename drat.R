@@ -15,6 +15,8 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("stringtools", repodir,libdir)
   insert.drat("restorepoint", repodir,libdir)
 
+  insert.drat("gtree", repodir,libdir)
+  insert.drat("gtreeWebPlay", repodir,libdir, pkg.dir="D:/libraries/gtree/gtreeWebPlay")
 
   insert.drat("rmdtools", repodir,libdir)
   insert.drat("shinyEvents", repodir,libdir)
