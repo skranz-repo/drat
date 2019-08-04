@@ -1,13 +1,15 @@
 Package: bbsvg
 Version: 0.1
-Depends: dplyr, tidyr, restorepoint,codeUtils, stringtools, rmdtools,
-       whisker, RColorBrewer, dplyrExtras, latexsvg, digest
+Depends: dplyr, tidyr, restorepoint,codeUtils,
+      stringtools, rmdtools, whisker, RColorBrewer,
+      dplyrExtras, latexsvg, digest
 MD5sum: 6758caca4b6b263a8969f15548a46499
 NeedsCompilation: no
 
 Package: BLPestimatoR
 Version: 0.1.5
-Depends: Rcpp (>= 0.12.7), mvQuad, ucminf, numDeriv, randtoolbox
+Depends: Rcpp (>= 0.12.7), mvQuad, ucminf, numDeriv,
+      randtoolbox
 LinkingTo: Rcpp
 License: GPL-3
 MD5sum: 8a120209b73fdf588bf21cf5ee27ea60
@@ -27,8 +29,8 @@ NeedsCompilation: no
 
 Package: ddsim
 Version: 0.1
-Depends: dplyr,restorepoint, stringtools, rmdtools, nleqslv, symbeqs,
-       dygraphs
+Depends: dplyr,restorepoint, stringtools, rmdtools,
+      nleqslv, symbeqs, dygraphs
 MD5sum: 81c5bd74f8c556270f55a20851baae75
 NeedsCompilation: no
 
@@ -49,8 +51,8 @@ NeedsCompilation: yes
 Package: gtree
 Version: 0.0.1
 Depends: restorepoint,stringtools, yaml, data.table,dplyr,
-       dplyrExtras, codeUtils, tidyr, digest, sys, lubridate,
-       jsonlite, whisker, matrixStats, lazyeval
+      dplyrExtras, codeUtils, tidyr, digest, sys,
+      lubridate, jsonlite, whisker, matrixStats, lazyeval
 Suggests: knitr, rmarkdown
 MD5sum: e3ab9c3f45504f6d0007d2ccb31cbc39
 NeedsCompilation: no
@@ -99,8 +101,8 @@ NeedsCompilation: no
 
 Package: rmdtools
 Version: 0.2.7
-Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils,
-       markdown, commonmark, knitr
+Depends: restorepoint, dplyr, stringtools, htmltools,
+      codeUtils, markdown, commonmark, knitr
 MD5sum: a850754c212be63f74defc89a77e67d1
 NeedsCompilation: no
 
@@ -122,25 +124,27 @@ NeedsCompilation: yes
 
 Package: RTutor
 Version: 2019.07.31
-Depends: shinyEvents,markdown,whisker, stringr, stringtools,
-       data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
-       shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
-       knitr, jsonlite, DT, memoise, yaml, rmarkdown
+Depends: shinyEvents,markdown,whisker, stringr,
+      stringtools, data.table, tibble, dplyr, shiny (>=
+      0.11.1), dplyrExtras, shinyAce, shinyBS (>= 0.61),
+      hwriter, restorepoint, RCurl, knitr, jsonlite, DT,
+      memoise, yaml, rmarkdown
 Suggests: digest
-MD5sum: 6fb8210984a04916f404def5638c3e71
+MD5sum: 804e1bc6d3cb197a63b2957d82b184cd
 NeedsCompilation: no
 
 Package: RTutorECars
 Version: 1.0
-Depends: RTutor, dplyr, ggplot2, choroplethr, lfe, gridExtra, evd,
-       htmlTable, stargazer, magick, reshape2
+Depends: RTutor, dplyr, ggplot2, choroplethr, lfe,
+      gridExtra, evd, htmlTable, stargazer, magick,
+      reshape2
 MD5sum: 9f5440ed17092f798b0cda0443113ded
 NeedsCompilation: no
 
 Package: RTutorIncentiveContracts
 Version: 0.1
-Depends: RTutor, readstata13, dplyr, stargazer, ggplot2, gridExtra,
-       lfe, regtools, ggmap, rmarkdown
+Depends: RTutor, readstata13, dplyr, stargazer, ggplot2,
+      gridExtra, lfe, regtools, ggmap, rmarkdown
 MD5sum: 17255e2e858bd1b901eacf3187d15f62
 NeedsCompilation: no
 
@@ -148,7 +152,7 @@ Package: RTutorSAGI
 Version: 2019.07.18
 Depends: RTutor
 Suggests: digest
-MD5sum: 31e914c188bf1502fd41f077c088b55b
+MD5sum: 90f82c9720f28470d42319a78ac0d450
 NeedsCompilation: no
 
 Package: shinyEvents
@@ -165,7 +169,8 @@ NeedsCompilation: no
 
 Package: sktools
 Version: 0.05
-Depends: restorepoint, data.table, lubridate, stringr, R.utils
+Depends: restorepoint, data.table, lubridate, stringr,
+      R.utils
 License: GPL (>= 2)
 MD5sum: 95a9f19f2f7623613d02b8c732d788a3
 NeedsCompilation: no
