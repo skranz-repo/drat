@@ -1,13 +1,11 @@
 Package: bbsvg
 Version: 0.1
-Depends: dplyr, tidyr, restorepoint,codeUtils,
-      stringtools, rmdtools, whisker, RColorBrewer,
-      dplyrExtras, latexsvg, digest
+Depends: dplyr, tidyr, restorepoint,codeUtils, stringtools, rmdtools,
+       whisker, RColorBrewer, dplyrExtras, latexsvg, digest
 
 Package: BLPestimatoR
 Version: 0.1.5
-Depends: Rcpp (>= 0.12.7), mvQuad, ucminf, numDeriv,
-      randtoolbox
+Depends: Rcpp (>= 0.12.7), mvQuad, ucminf, numDeriv, randtoolbox
 LinkingTo: Rcpp
 License: GPL-3
 Archs: i386, x64
@@ -22,8 +20,8 @@ Depends: DBI, restorepoint, yaml, stringtools
 
 Package: ddsim
 Version: 0.1
-Depends: dplyr,restorepoint, stringtools, rmdtools,
-      nleqslv, symbeqs, dygraphs
+Depends: dplyr,restorepoint, stringtools, rmdtools, nleqslv, symbeqs,
+       dygraphs
 
 Package: dplyrExtras
 Version: 0.1.3
@@ -39,8 +37,8 @@ Archs: i386, x64
 Package: gtree
 Version: 0.0.1
 Depends: restorepoint,stringtools, yaml, data.table,dplyr,
-      dplyrExtras, codeUtils, tidyr, digest, sys,
-      lubridate, jsonlite, whisker, matrixStats, lazyeval
+       dplyrExtras, codeUtils, tidyr, digest, sys, lubridate,
+       jsonlite, whisker, matrixStats, lazyeval
 Suggests: knitr, rmarkdown
 
 Package: gtreeWebPlay
@@ -76,8 +74,8 @@ License: GPL (>= 2)
 
 Package: rmdtools
 Version: 0.2.7
-Depends: restorepoint, dplyr, stringtools, htmltools,
-      codeUtils, markdown, commonmark, knitr
+Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils,
+       markdown, commonmark, knitr
 
 Package: rowmins
 Version: 1.0
@@ -95,11 +93,10 @@ Archs: i386, x64
 
 Package: RTutor
 Version: 2019.07.31
-Depends: shinyEvents,markdown,whisker, stringr,
-      stringtools, data.table, tibble, dplyr, shiny (>=
-      0.11.1), dplyrExtras, shinyAce, shinyBS (>= 0.61),
-      hwriter, restorepoint, RCurl, knitr, jsonlite, DT,
-      memoise, yaml, rmarkdown
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+       data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+       shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+       knitr, jsonlite, DT, memoise, yaml, rmarkdown
 Suggests: digest
 
 Package: RTutorSAGI
@@ -117,8 +114,7 @@ Depends: shiny, shinyEvents, jsonlite, stringtools, dplyr
 
 Package: sktools
 Version: 0.05
-Depends: restorepoint, data.table, lubridate, stringr,
-      R.utils
+Depends: restorepoint, data.table, lubridate, stringr, R.utils
 License: GPL (>= 2)
 
 Package: skUtils
