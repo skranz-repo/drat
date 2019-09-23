@@ -9,11 +9,11 @@ example.drat = function() {
 assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(version_min = "3.3.0", version_max = "99.99.99", path = "bin"))), "devtools")
   find_rtools()
   
-  github.to.drat("felsti/RTutorECars",download.dir, repodir, skip.download = FALSE)
+  #github.to.drat("felsti/RTutorECars",download.dir, repodir, skip.download = FALSE)
   
-  insert.drat("BLPestimatoR", repodir,libdir)
   insert.drat("stringtools", repodir,libdir)
-  insert.drat("restorepoint", repodir,libdir)
+  insert.drat("codeUtils", repodir, libdir)
+  insert.drat("dbmisc", repodir, libdir)
 
   insert.drat("gtree", repodir,libdir)
   insert.drat("gtreeWebPlay", repodir,libdir, pkg.dir="D:/libraries/gtree/gtreeWebPlay")
@@ -27,7 +27,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("RTutor", repodir,libdir, add.source = FALSE)
   drat::insertPackage("D:/libraries/drat/RTutor_2019.07.31.tar.gz", repodir)
   #
-  insert.drat("RTutorIncentiveContracts", repodir, pkg.dir="D:/libraries/RTutor/examples/IncentiveContracts/RTutorIncentiveContracts", add.binary=FALSE)
+  #insert.drat("RTutorIncentiveContracts", repodir, pkg.dir="D:/libraries/RTutor/examples/IncentiveContracts/RTutorIncentiveContracts", add.binary=FALSE)
   #drat::insertPackage("D:/libraries/drat/RTutorIncentiveContracts_0.1.tar.gz", repodir)
   
   
@@ -36,8 +36,6 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("rowmins", repodir, libdir)
   
   insert.drat("shinyEventsUI", repodir, libdir)
-  insert.drat("codeUtils", repodir, libdir)
-  insert.drat("dbmisc", repodir, libdir)
   insert.drat("ddsim", repodir, libdir)
   insert.drat("symbeqs", repodir, libdir)
   insert.drat("bbsvg", repodir, libdir)

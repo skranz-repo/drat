@@ -16,7 +16,7 @@ NeedsCompilation: yes
 Package: codeUtils
 Version: 0.1
 Depends: restorepoint
-MD5sum: 87362ab3a05583077f8340ae919ae934
+MD5sum: 68dd9a5b929c91b8f5854e2b4789a4a9
 NeedsCompilation: no
 
 Package: dbmisc
@@ -52,7 +52,7 @@ Depends: restorepoint,stringtools, yaml, data.table,dplyr,
        dplyrExtras, codeUtils, tidyr, digest, sys, lubridate,
        jsonlite, whisker, matrixStats, lazyeval
 Suggests: knitr, rmarkdown
-MD5sum: f017114b5c334f9f54ecab9fb4506663
+MD5sum: 179896915268d25603e7714a557a0963
 NeedsCompilation: no
 
 Package: gtreeWebPlay
@@ -101,7 +101,7 @@ Package: rmdtools
 Version: 0.2.7
 Depends: restorepoint, dplyr, stringtools, htmltools, codeUtils,
        markdown, commonmark, knitr
-MD5sum: a850754c212be63f74defc89a77e67d1
+MD5sum: 30ec9ea60d32a4a4a2da72f060413b8b
 NeedsCompilation: no
 
 Package: rowmins
@@ -154,7 +154,7 @@ NeedsCompilation: no
 Package: shinyEvents
 Version: 2.3
 Depends: shiny, restorepoint
-MD5sum: 9858aa093b7ab01728680721612b140a
+MD5sum: d717493b3a5c629cb77c9268ec2c4520
 NeedsCompilation: no
 
 Package: shinyEventsUI
@@ -182,7 +182,7 @@ Package: stringtools
 Version: 0.01
 Depends: stringr
 Suggests: data.table
-MD5sum: 0a2c42609f8f0e43000f3fb96bb935e0
+MD5sum: 797788cfa6d3debdbbfa19d83271c0cc
 NeedsCompilation: no
 
 Package: symbeqs

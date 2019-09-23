@@ -1,0 +1,8 @@
+Package: codeUtils
+Version: 0.1
+Depends: restorepoint
+
+Package: stringtools
+Version: 0.01
+Depends: stringr
+Suggests: data.table
