@@ -1,5 +1,5 @@
 #install.packages("drat")
-
+ 
 example.drat = function() {
   library(drat)
   repodir = "D:/libraries/drat/drat"; download.dir = "D:/libraries/drat"
@@ -25,7 +25,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("RTutorSAGI", repodir,libdir, pkg.dir="D:/libraries/RTutor/RTutorSAGI")
   
   insert.drat("RTutor", repodir,libdir, add.source = FALSE)
-  drat::insertPackage("D:/libraries/drat/RTutor_2019.07.31.tar.gz", repodir)
+  drat::insertPackage("D:/libraries/drat/RTutor_2019.10.11.tar.gz", repodir)
   #
   #insert.drat("RTutorIncentiveContracts", repodir, pkg.dir="D:/libraries/RTutor/examples/IncentiveContracts/RTutorIncentiveContracts", add.binary=FALSE)
   #drat::insertPackage("D:/libraries/drat/RTutorIncentiveContracts_0.1.tar.gz", repodir)
