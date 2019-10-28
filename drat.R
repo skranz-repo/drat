@@ -54,7 +54,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   
   options(repos = unique(c("https://skranz-repo.github.io/drat/",getOption("repos"))))
   
-  install.packages("BLPestimatoR")
+  install.packages("rowmins")
   install.packages("skUtils")
   
   install.packages("restorepoint")
@@ -67,7 +67,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   install.packages("RTutor")  
 }
 
-insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=!TRUE) {
+insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE) {
   library(drat)
   if (add.source) {
     src = devtools::build(pkg.dir)

@@ -23,6 +23,13 @@ Version: 2018.11.20
 Depends: restorepoint, sandwich, mvtnorm, dplyr
 Imports: mfx, ggplot2, tidyr, texreg, stargazer
 
+Package: repgame
+Version: 0.3
+Depends: restorepoint, rowmins, slam, glpkAPI
+Imports: Rcpp (>= 0.11.2)
+LinkingTo: Rcpp
+Archs: x64
+
 Package: rgmpl
 Version: 0.04
 Depends: stringr, glpkAPI
