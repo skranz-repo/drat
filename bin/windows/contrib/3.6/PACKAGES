@@ -6,6 +6,13 @@ Package: dplyrExtras
 Version: 0.1.3
 Depends: data.table,dplyr, dtplyr
 
+Package: gtree
+Version: 0.0.1
+Depends: restorepoint,stringtools, yaml, data.table,dplyr,
+       dplyrExtras, codeUtils, tidyr, digest, sys, lubridate,
+       jsonlite, whisker, matrixStats, lazyeval
+Suggests: knitr, rmarkdown
+
 Package: gtreeWebPlay
 Version: 0.0.1
 Depends: gtree, shinyEvents, shiny, rmdtools
