@@ -47,19 +47,19 @@ MD5sum: 8aaa5455f6b2943ba526d287daf1e922
 NeedsCompilation: yes
 
 Package: gtree
-Version: 0.0.1
+Version: 0.1.0
 Depends: restorepoint,stringtools, yaml, data.table,dplyr, dplyrExtras,
         codeUtils, tidyr, digest, sys, lubridate, jsonlite, whisker,
         matrixStats, lazyeval
 Suggests: knitr, rmarkdown
-MD5sum: 179896915268d25603e7714a557a0963
+MD5sum: 24c84d3b9d7b9def207e5bab147b9330
 NeedsCompilation: no
 
 Package: gtreeWebPlay
 Version: 0.0.1
 Depends: gtree, shinyEvents, shiny, rmdtools
 Suggests: knitr,rmarkdown
-MD5sum: 7b4b331b7e93865457a17075d6b4f084
+MD5sum: 33ad94103318847a5812b40dab839655
 NeedsCompilation: no
 
 Package: rampl
@@ -122,10 +122,10 @@ NeedsCompilation: yes
 
 Package: RTutor
 Version: 2019.10.11
-Depends: shinyEvents,markdown,whisker, stringr, stringtools, data.table,
-        tibble, dplyr, shiny (>= 0.11.1), dplyrExtras, shinyAce, shinyBS
-        (>= 0.61), hwriter, restorepoint, RCurl, knitr, jsonlite, DT,
-        memoise, yaml, rmarkdown
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+        knitr, jsonlite, DT, memoise, yaml, rmarkdown
 Suggests: digest
 MD5sum: eedcd1ea56861f66dda82898e8a29cc6
 NeedsCompilation: no
@@ -139,8 +139,8 @@ NeedsCompilation: no
 
 Package: RTutorIncentiveContracts
 Version: 0.1
-Depends: RTutor, readstata13, dplyr, stargazer, ggplot2, gridExtra, lfe,
-        regtools, ggmap, rmarkdown
+Depends: RTutor, readstata13, dplyr, stargazer, ggplot2, gridExtra,
+        lfe, regtools, ggmap, rmarkdown
 MD5sum: 17255e2e858bd1b901eacf3187d15f62
 NeedsCompilation: no
 
