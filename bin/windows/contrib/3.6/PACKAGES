@@ -9,8 +9,8 @@ Depends: data.table,dplyr, dtplyr
 Package: gtree
 Version: 0.0.1
 Depends: restorepoint,stringtools, yaml, data.table,dplyr,
-       dplyrExtras, codeUtils, tidyr, digest, sys, lubridate,
-       jsonlite, whisker, matrixStats, lazyeval
+      dplyrExtras, codeUtils, tidyr, digest, sys,
+      lubridate, jsonlite, whisker, matrixStats, lazyeval
 Suggests: knitr, rmarkdown
 
 Package: gtreeWebPlay
@@ -38,7 +38,7 @@ License: GPL (>= 2)
 Package: rmdtools
 Version: 0.2.7
 Depends: restorepoint, dplyr, stringtools, htmltools,
-       codeUtils, markdown, commonmark, knitr
+      codeUtils, markdown, commonmark, knitr
 
 Package: rowmins
 Version: 1.0
@@ -48,12 +48,12 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: RTutor
-Version: 2019.10.11
+Version: 2019.11.13
 Depends: shinyEvents,markdown,whisker, stringr, stringtools,
-       data.table, tibble, dplyr, shiny (>= 0.11.1),
-       dplyrExtras, shinyAce, shinyBS (>= 0.61), hwriter,
-       restorepoint, RCurl, knitr, jsonlite, DT, memoise, yaml,
-       rmarkdown
+      data.table, tibble, dplyr, shiny (>= 0.11.1),
+      dplyrExtras, shinyAce, shinyBS (>= 0.61), hwriter,
+      restorepoint, RCurl, knitr, jsonlite, DT, memoise,
+      yaml, rmarkdown
 Suggests: digest
 
 Package: RTutorSAGI
@@ -71,7 +71,8 @@ Depends: shiny, shinyEvents, jsonlite, stringtools, dplyr
 
 Package: sktools
 Version: 0.05
-Depends: restorepoint, data.table, lubridate, stringr, R.utils
+Depends: restorepoint, data.table, lubridate, stringr,
+      R.utils
 License: GPL (>= 2)
 
 Package: skUtils
