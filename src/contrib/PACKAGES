@@ -89,7 +89,7 @@ Package: RelationalContractsCpp
 Version: 0.1.0
 Imports: Rcpp (>= 1.0.0)
 LinkingTo: Rcpp
-MD5sum: a6e16dbefc6e19c539c451458dbff610
+MD5sum: 2463302ef6db06d5f42a1162fce09f38
 NeedsCompilation: yes
 
 Package: repgame

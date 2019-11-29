@@ -1,5 +1,6 @@
 #install.packages("drat")
   library(drat)
+  library(restorepoint)
   repodir = "D:/libraries/drat/drat"; download.dir = "D:/libraries/drat"
   libdir = "D:/libraries"
  
@@ -15,8 +16,11 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("codeUtils", repodir, libdir)
   insert.drat("dbmisc", repodir, libdir)
 
+  #install.packages("RelationalContractsCpp",repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
+  insert.drat("RelationalContracts", repodir,libdir, R.versions = "3.6",add.source = FALSE)
+
   insert.drat("RelationalContracts", repodir,libdir)
-  insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="D:/libraries/RelationalContracts/RelationalContractsCpp")
+  insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="D:/libraries/RelationalContracts/RelationalContractsCpp",R.versions = "3.6")
 
   
   insert.drat("gtree", repodir,libdir)
@@ -27,7 +31,6 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("dplyrExtras", repodir,libdir)
   insert.drat("regtools", repodir,libdir)
   insert.drat("RTutorSAGI", repodir,libdir, pkg.dir="D:/libraries/RTutor/RTutorSAGI")
-  install.packages("RelationalContractsCPP",repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
   insert.drat("RTutor", repodir,libdir, add.source = FALSE)
   drat::insertPackage("D:/libraries/drat/RTutor_2019.11.22.tar.gz", repodir)
   #
@@ -71,15 +74,26 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   install.packages("RTutor")  
 }
 
-insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE) {
+insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE, R.versions=c("3.5","3.6")) {
   library(drat)
+  restore.point("insert.drat")
   if (add.source) {
     src = devtools::build(pkg.dir)
     drat::insertPackage(src, repodir)
   }
   if (add.binary) {
-    bin = devtools::build(pkg.dir, binary = TRUE, args = c('--preclean'))
-    drat::insertPackage(bin, repodir)
+    #bin = devtools::build(pkg.dir, binary = TRUE, args = c('--preclean'))
+    #drat::insertPackage(bin, repodir)
+    writeLines(pkg.dir, "D:/libraries/drat/pkgdir.txt")
+    if ("3.5" %in% R.versions) {
+      cat("\nR 3.5.3")
+      system("D:/Programs/R/bin/Rscript D:/libraries/drat/build_script.R")
+    }
+    if ("3.6" %in% R.versions) {
+      cat("\nR 3.6.1")
+      system("D:/Programs/R-3.6.1/bin/Rscript D:/libraries/drat/build_script.R")
+    }
+    
   }
 }
 
