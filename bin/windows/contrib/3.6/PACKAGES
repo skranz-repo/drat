@@ -23,6 +23,12 @@ Version: 2018.11.20
 Depends: restorepoint, sandwich, mvtnorm, dplyr
 Imports: mfx, ggplot2, tidyr, texreg, stargazer
 
+Package: RelationalContractsCpp
+Version: 0.1.0
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+Archs: x64
+
 Package: repgame
 Version: 0.3
 Depends: restorepoint, rowmins, slam, glpkAPI

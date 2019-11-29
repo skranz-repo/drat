@@ -82,14 +82,14 @@ Version: 0.1.0
 Depends: restorepoint, dplyr, matrixStats,RelationalContractsCpp,
        tidyr
 Suggests: ggplot2, plotly,DiagrammeR
-MD5sum: f3346bf0518f77b7d6658f9bccdcd55c
+MD5sum: c2a925e93de0334089f5be4abbaa07c3
 NeedsCompilation: no
 
 Package: RelationalContractsCpp
 Version: 0.1.0
 Imports: Rcpp (>= 1.0.0)
 LinkingTo: Rcpp
-MD5sum: 1f4b2d7127c934c8278a2458c3aab8c6
+MD5sum: a6e16dbefc6e19c539c451458dbff610
 NeedsCompilation: yes
 
 Package: repgame
