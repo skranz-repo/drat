@@ -15,6 +15,10 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("codeUtils", repodir, libdir)
   insert.drat("dbmisc", repodir, libdir)
 
+  insert.drat("RelationalContracts", repodir,libdir)
+  insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="D:/libraries/RelationalContracts/RelationalContractsCpp")
+
+  
   insert.drat("gtree", repodir,libdir)
   insert.drat("gtreeWebPlay", repodir,libdir, pkg.dir="D:/libraries/gtree/gtreeWebPlay")
 
@@ -23,7 +27,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("dplyrExtras", repodir,libdir)
   insert.drat("regtools", repodir,libdir)
   insert.drat("RTutorSAGI", repodir,libdir, pkg.dir="D:/libraries/RTutor/RTutorSAGI")
-  
+  install.packages("RelationalContractsCPP",repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
   insert.drat("RTutor", repodir,libdir, add.source = FALSE)
   drat::insertPackage("D:/libraries/drat/RTutor_2019.11.22.tar.gz", repodir)
   #
