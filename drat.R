@@ -17,10 +17,11 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("dbmisc", repodir, libdir)
 
   #install.packages("RelationalContractsCpp",repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
-  insert.drat("RelationalContracts", repodir,libdir, R.versions = "3.6",add.source = FALSE)
-
+  #insert.drat("RelationalContracts", repodir,libdir, R.versions = "3.6",add.source = FALSE)
+  #insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="D:/libraries/RelationalContracts/RelationalContractsCpp",R.versions = "3.6", add.source = FALSE)
+  
   insert.drat("RelationalContracts", repodir,libdir)
-  insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="D:/libraries/RelationalContracts/RelationalContractsCpp",R.versions = "3.6")
+  insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="D:/libraries/RelationalContracts/RelationalContractsCpp")
 
   
   insert.drat("gtree", repodir,libdir)

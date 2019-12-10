@@ -82,7 +82,7 @@ Version: 0.1.0
 Depends: restorepoint, dplyr, matrixStats,RelationalContractsCpp,
        tidyr
 Suggests: ggplot2, plotly,DiagrammeR
-MD5sum: c2a925e93de0334089f5be4abbaa07c3
+MD5sum: f8effed3e795e117c6bc3d8724efc3c4
 NeedsCompilation: no
 
 Package: RelationalContractsCpp
