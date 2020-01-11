@@ -15,6 +15,8 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("stringtools", repodir,libdir)
   insert.drat("codeUtils", repodir, libdir)
   insert.drat("dbmisc", repodir, libdir)
+  
+  insert.drat("glueformula", repodir, libdir)
 
   #install.packages("RelationalContractsCpp",repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
   #insert.drat("RelationalContracts", repodir,libdir, R.versions = "3.6",add.source = FALSE)

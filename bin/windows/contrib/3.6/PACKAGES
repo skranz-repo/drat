@@ -6,6 +6,10 @@ Package: dplyrExtras
 Version: 0.1.3
 Depends: data.table,dplyr, dtplyr
 
+Package: glueformula
+Version: 0.1.0
+Imports: glue
+
 Package: gtree
 Version: 0.0.1
 Depends: restorepoint,stringtools, yaml, data.table,dplyr, dplyrExtras,

@@ -34,6 +34,10 @@ Imports: Rcpp (>= 0.11.2)
 LinkingTo: Rcpp
 Archs: i386, x64
 
+Package: glueformula
+Version: 0.1.0
+Imports: glue
+
 Package: gtree
 Version: 0.1.0
 Depends: restorepoint,stringtools, yaml, data.table,dplyr, dplyrExtras,
