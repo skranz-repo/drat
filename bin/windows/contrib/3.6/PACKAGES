@@ -96,6 +96,6 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: stringtools
-Version: 0.01
+Version: 0.02
 Depends: stringr
 Suggests: data.table

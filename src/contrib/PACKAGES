@@ -199,10 +199,10 @@ MD5sum: c42e3661c9ab2c7348ef79014a18264b
 NeedsCompilation: yes
 
 Package: stringtools
-Version: 0.01
+Version: 0.02
 Depends: stringr
 Suggests: data.table
-MD5sum: 797788cfa6d3debdbbfa19d83271c0cc
+MD5sum: 7633af48ed447fe50363363ee7747154
 NeedsCompilation: no
 
 Package: symbeqs
