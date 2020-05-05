@@ -24,7 +24,7 @@ Depends: dplyr,restorepoint, stringtools, rmdtools, nleqslv, symbeqs,
         dygraphs
 
 Package: dplyrExtras
-Version: 0.1.3
+Version: 0.1.4
 Depends: data.table,dplyr, dtplyr
 
 Package: dyngame
