@@ -32,6 +32,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("rmdtools", repodir,libdir)
   insert.drat("shinyEvents", repodir,libdir)
   insert.drat("dplyrExtras", repodir,libdir)
+  insert.drat("mlogitExtras", repodir,libdir, pkg.dir="D:/libraries/mlogit/mlogitExtras")
   insert.drat("regtools", repodir,libdir)
   insert.drat("RTutorSAGI", repodir,libdir, pkg.dir="D:/libraries/RTutor/RTutorSAGI")
   insert.drat("RTutor", repodir,libdir, add.source = FALSE)

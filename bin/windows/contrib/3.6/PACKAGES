@@ -22,6 +22,10 @@ Version: 0.0.1
 Depends: gtree, shinyEvents, shiny, rmdtools
 Suggests: knitr,rmarkdown
 
+Package: mlogitExtras
+Version: 0.1.0
+Depends: mlogit, randtoolbox, restorepoint
+
 Package: regtools
 Version: 2018.11.20
 Depends: restorepoint, sandwich, mvtnorm, dplyr

@@ -50,6 +50,10 @@ Version: 0.0.1
 Depends: gtree, shinyEvents, shiny, rmdtools
 Suggests: knitr,rmarkdown
 
+Package: mlogitExtras
+Version: 0.1.0
+Depends: mlogit, randtoolbox, restorepoint
+
 Package: rampl
 Version: 0.02
 Depends: stringr, rgmpl, rneos, data.table, restorepoint
