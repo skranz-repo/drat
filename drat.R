@@ -1,8 +1,8 @@
 #install.packages("drat")
   library(drat)
   library(restorepoint)
-  repodir = "D:/libraries/drat/drat"; download.dir = "D:/libraries/drat"
-  libdir = "D:/libraries"
+  repodir = "C:/libraries/drat/drat"; download.dir = "C:/libraries/drat"
+  libdir = "C:/libraries"
  
 example.drat = function() {
   
@@ -20,26 +20,26 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
 
   #install.packages("RelationalContractsCpp",repos = c("https://skranz-repo.github.io/drat/",getOption("repos")))
   #insert.drat("RelationalContracts", repodir,libdir, R.versions = "3.6",add.source = FALSE)
-  #insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="D:/libraries/RelationalContracts/RelationalContractsCpp",R.versions = "3.6", add.source = FALSE)
+  #insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="C:/libraries/RelationalContracts/RelationalContractsCpp",R.versions = "3.6", add.source = FALSE)
   
   insert.drat("RelationalContracts", repodir,libdir)
-  insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="D:/libraries/RelationalContracts/RelationalContractsCpp")
+  insert.drat("RelationalContractsCpp", repodir,libdir, pkg.dir="C:/libraries/RelationalContracts/RelationalContractsCpp")
 
   
   insert.drat("gtree", repodir,libdir)
-  insert.drat("gtreeWebPlay", repodir,libdir, pkg.dir="D:/libraries/gtree/gtreeWebPlay")
+  insert.drat("gtreeWebPlay", repodir,libdir, pkg.dir="C:/libraries/gtree/gtreeWebPlay")
 
   insert.drat("rmdtools", repodir,libdir)
   insert.drat("shinyEvents", repodir,libdir)
   insert.drat("dplyrExtras", repodir,libdir)
-  insert.drat("mlogitExtras", repodir,libdir, pkg.dir="D:/libraries/mlogit/mlogitExtras")
+  insert.drat("mlogitExtras", repodir,libdir, pkg.dir="C:/libraries/mlogit/mlogitExtras")
   insert.drat("regtools", repodir,libdir)
-  insert.drat("RTutorSAGI", repodir,libdir, pkg.dir="D:/libraries/RTutor/RTutorSAGI")
-  insert.drat("RTutor", repodir,libdir, add.source = FALSE)
-  drat::insertPackage("D:/libraries/drat/RTutor_2020.6.08.tar.gz", repodir)
+  insert.drat("RTutorSAGI", repodir,libdir, pkg.dir="C:/libraries/RTutor/RTutorSAGI")
+  insert.drat("RTutor", repodir,libdir, add.source = TRUE)
+  drat::insertPackage("C:/libraries/drat/RTutor_2020.6.08.tar.gz", repodir)
   #
-  #insert.drat("RTutorIncentiveContracts", repodir, pkg.dir="D:/libraries/RTutor/examples/IncentiveContracts/RTutorIncentiveContracts", add.binary=FALSE)
-  #drat::insertPackage("D:/libraries/drat/RTutorIncentiveContracts_0.1.tar.gz", repodir)
+  #insert.drat("RTutorIncentiveContracts", repodir, pkg.dir="C:/libraries/RTutor/examples/IncentiveContracts/RTutorIncentiveContracts", add.binary=FALSE)
+  #drat::insertPackage("C:/libraries/drat/RTutorIncentiveContracts_0.1.tar.gz", repodir)
   
   
   
@@ -78,7 +78,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   install.packages("RTutor")  
 }
 
-insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE, R.versions=c("3.5","3.6")) {
+insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE, R.versions=c("4.0","3.6")) {
   library(drat)
   restore.point("insert.drat")
   if (add.source) {
@@ -88,14 +88,14 @@ insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg
   if (add.binary) {
     #bin = devtools::build(pkg.dir, binary = TRUE, args = c('--preclean'))
     #drat::insertPackage(bin, repodir)
-    writeLines(pkg.dir, "D:/libraries/drat/pkgdir.txt")
-    if ("3.5" %in% R.versions) {
-      cat("\nR 3.5.3")
-      system("D:/Programs/R/bin/Rscript D:/libraries/drat/build_script.R")
+    writeLines(pkg.dir, "C:/libraries/drat/pkgdir.txt")
+    if ("4.0" %in% R.versions) {
+      cat("\nR 4.0.")
+      system("C:/Programs/R/bin/Rscript C:/libraries/drat/build_script.R")
     }
     if ("3.6" %in% R.versions) {
-      cat("\nR 3.6.1")
-      system("D:/Programs/R-3.6.1/bin/Rscript D:/libraries/drat/build_script.R")
+      cat("\nR 3.6.3")
+      system("C:/Programs/R-3.6.3/bin/Rscript C:/libraries/drat/build_script.R")
     }
     
   }
