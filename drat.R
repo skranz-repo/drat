@@ -78,7 +78,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   install.packages("RTutor")  
 }
 
-insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE, R.versions=c("4.0","3.6")) {
+insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE, R.versions=c("4.0")) {
   library(drat)
   restore.point("insert.drat")
   if (add.source) {
