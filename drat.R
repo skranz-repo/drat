@@ -35,7 +35,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("mlogitExtras", repodir,libdir, pkg.dir="C:/libraries/mlogit/mlogitExtras")
   insert.drat("regtools", repodir,libdir)
   insert.drat("RTutorSAGI", repodir,libdir, pkg.dir="C:/libraries/RTutor/RTutorSAGI")
-  insert.drat("RTutor", repodir,libdir, add.source = TRUE)
+  insert.drat("RTutor", repodir,libdir, add.source = TRUE,add.binary = FALSE)
   drat::insertPackage("C:/libraries/drat/RTutor_2020.6.08.tar.gz", repodir)
   #
   #insert.drat("RTutorIncentiveContracts", repodir, pkg.dir="C:/libraries/RTutor/examples/IncentiveContracts/RTutorIncentiveContracts", add.binary=FALSE)
@@ -84,6 +84,7 @@ insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg
   if (add.source) {
     src = devtools::build(pkg.dir)
     drat::insertPackage(src, repodir)
+    cat("\nSource package inserted.")
   }
   if (add.binary) {
     #bin = devtools::build(pkg.dir, binary = TRUE, args = c('--preclean'))
