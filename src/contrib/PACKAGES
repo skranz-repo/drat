@@ -320,7 +320,7 @@ Depends: shinyEvents,markdown,whisker, stringr, stringtools,
         shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
         knitr, jsonlite, DT, memoise, yaml, rmarkdown
 Suggests: digest
-MD5sum: b53559317ed35d1098a48a25657f96f3
+MD5sum: a655c4636c93a36728d706dbb83f2c15
 NeedsCompilation: no
 
 Package: RTutorECars
