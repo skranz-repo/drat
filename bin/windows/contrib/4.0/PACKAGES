@@ -1,3 +1,9 @@
+Package: lfe
+Version: 1.0-418
+Depends: Matrix, R (>= 2.10.1)
+License: Artistic-2.0
+Archs: x64
+
 Package: RTutor
 Version: 2020.11.25
 Depends: shinyEvents,markdown,whisker, stringr, stringtools,

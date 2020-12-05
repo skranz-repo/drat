@@ -34,6 +34,8 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   insert.drat("dplyrExtras", repodir,libdir)
   insert.drat("mlogitExtras", repodir,libdir, pkg.dir="C:/libraries/mlogit/mlogitExtras")
   insert.drat("regtools", repodir,libdir)
+  insert.drat("lfe",repodir, libdir)
+  drat::insertPackage("lfe_1.0-418.tgz", repodir)
   insert.drat("RTutorSAGI", repodir,libdir, pkg.dir="C:/libraries/RTutor/RTutorSAGI")
   insert.drat("RTutor", repodir,libdir, add.source = TRUE,add.binary = TRUE)
   drat::insertPackage("C:/libraries/drat/RTutor_2020.6.08.tar.gz", repodir)
@@ -78,7 +80,7 @@ assignInNamespace("version_info", c(devtools:::version_info, list("3.5" = list(v
   install.packages("RTutor")  
 }
 
-insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE, R.versions=c("4.0")) {
+insert.drat = function(pkg,repodir=getwd(),libdir, pkg.dir=file.path(libdir, pkg, pkg), add.binary=TRUE, add.source=TRUE, R.versions=c("4.0","3.6")) {
   library(drat)
   restore.point("insert.drat")
   if (add.source) {

@@ -1,0 +1,5 @@
+Package: lfe
+Version: 1.0-418
+Depends: Matrix, R (>= 2.10.1)
+License: Artistic-2.0
+MD5sum: a38a62ee9b8b611c2c7c2e1e4104ae89
