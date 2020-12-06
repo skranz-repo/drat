@@ -4,20 +4,30 @@ Depends: Matrix, R (>= 2.10.1)
 License: Artistic-2.0
 Archs: x64
 
+Package: lfe
+Version: 2.8-5.1
+Depends: R (>= 2.15.2), Matrix (>= 1.1-2)
+Imports: Formula, xtable, compiler, utils, methods, sandwich,
+       parallel
+Suggests: knitr, digest, igraph, plm, cubature (>= 2.0.3), numDeriv,
+       data.table, alpaca, testthat
+License: Artistic-2.0
+Archs: i386, x64
+
 Package: RTutor
 Version: 2020.11.25
 Depends: shinyEvents,markdown,whisker, stringr, stringtools,
-        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
-        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
-        knitr, jsonlite, DT, memoise, yaml, rmarkdown
+       data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+       shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+       knitr, jsonlite, DT, memoise, yaml, rmarkdown
 Suggests: digest
 
 Package: RTutor
 Version: 2020.8.11
 Depends: shinyEvents,markdown,whisker, stringr, stringtools,
-        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
-        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
-        knitr, jsonlite, DT, memoise, yaml, rmarkdown
+       data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+       shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+       knitr, jsonlite, DT, memoise, yaml, rmarkdown
 Suggests: digest
 
 Package: RTutorSAGI

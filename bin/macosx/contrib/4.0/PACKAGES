@@ -3,3 +3,13 @@ Version: 1.0-418
 Depends: Matrix, R (>= 2.10.1)
 License: Artistic-2.0
 MD5sum: a38a62ee9b8b611c2c7c2e1e4104ae89
+
+Package: lfe
+Version: 2.8-5.1
+Depends: R (>= 2.15.2), Matrix (>= 1.1-2)
+Imports: Formula, xtable, compiler, utils, methods, sandwich,
+       parallel
+Suggests: knitr, digest, igraph, plm, cubature (>= 2.0.3), numDeriv,
+       data.table, alpaca, testthat
+License: Artistic-2.0
+MD5sum: e25f53321e0bc86451e86ffd6943287e
