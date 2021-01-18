@@ -3,6 +3,10 @@ Version: 0.1
 Depends: restorepoint
 
 Package: dplyrExtras
+Version: 0.1.3
+Depends: data.table,dplyr, dtplyr
+
+Package: dplyrExtras
 Version: 0.1.4
 Depends: data.table,dplyr, dtplyr
 
@@ -67,6 +71,62 @@ License: GPL (>= 2)
 Archs: x64
 
 Package: RTutor
+Version: 2019.10.11
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+        knitr, jsonlite, DT, memoise, yaml, rmarkdown
+Suggests: digest
+
+Package: RTutor
+Version: 2019.11.13
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+        knitr, jsonlite, DT, memoise, yaml, rmarkdown
+Suggests: digest
+
+Package: RTutor
+Version: 2019.11.15
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+        knitr, jsonlite, DT, memoise, yaml, rmarkdown
+Suggests: digest
+
+Package: RTutor
+Version: 2019.11.22
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+        knitr, jsonlite, DT, memoise, yaml, rmarkdown
+Suggests: digest
+
+Package: RTutor
+Version: 2020.11.25
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+        knitr, jsonlite, DT, memoise, yaml, rmarkdown
+Suggests: digest
+
+Package: RTutor
+Version: 2020.3.13
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+        knitr, jsonlite, DT, memoise, yaml, rmarkdown
+Suggests: digest
+
+Package: RTutor
+Version: 2020.4.05
+Depends: shinyEvents,markdown,whisker, stringr, stringtools,
+        data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
+        shinyAce, shinyBS (>= 0.61), hwriter, restorepoint, RCurl,
+        knitr, jsonlite, DT, memoise, yaml, rmarkdown
+Suggests: digest
+
+Package: RTutor
 Version: 2020.6.08
 Depends: shinyEvents,markdown,whisker, stringr, stringtools,
         data.table, tibble, dplyr, shiny (>= 0.11.1), dplyrExtras,
@@ -98,6 +158,11 @@ Imports: Rcpp (>= 0.11.2)
 LinkingTo: Rcpp
 License: GPL (>= 2)
 Archs: x64
+
+Package: stringtools
+Version: 0.01
+Depends: stringr
+Suggests: data.table
 
 Package: stringtools
 Version: 0.02
