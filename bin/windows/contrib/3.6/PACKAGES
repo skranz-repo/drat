@@ -139,6 +139,11 @@ Version: 2019.07.18
 Depends: RTutor
 Suggests: digest
 
+Package: RTutorSAGI
+Version: 2020.11.27
+Depends: RTutor
+Suggests: digest
+
 Package: shinyEvents
 Version: 2.3
 Depends: shiny, restorepoint

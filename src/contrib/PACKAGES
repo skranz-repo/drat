@@ -375,7 +375,7 @@ Package: RTutorSAGI
 Version: 2020.11.27
 Depends: RTutor
 Suggests: digest
-MD5sum: 776c5da075278866a1d678511795c0a3
+MD5sum: c28451c694972bacf2abd7d9618853b3
 NeedsCompilation: no
 
 Package: shinyEvents
