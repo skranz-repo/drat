@@ -76,6 +76,15 @@ Suggests: knitr, rmarkdown
 MD5sum: 24c84d3b9d7b9def207e5bab147b9330
 NeedsCompilation: no
 
+Package: gtree
+Version: 0.1.1
+Depends: restorepoint,stringtools, yaml, data.table,dplyr, dplyrExtras,
+        codeUtils, tidyr, digest, sys, lubridate, jsonlite, whisker,
+        matrixStats, lazyeval
+Suggests: knitr, rmarkdown
+MD5sum: 07a5fb21f7a5dfc25f2668c6eee4da4c
+NeedsCompilation: no
+
 Package: gtreeWebPlay
 Version: 0.0.1
 Depends: gtree, shinyEvents, shiny, rmdtools

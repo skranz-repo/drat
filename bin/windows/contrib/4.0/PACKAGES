@@ -1,3 +1,10 @@
+Package: gtree
+Version: 0.1.1
+Depends: restorepoint,stringtools, yaml, data.table,dplyr, dplyrExtras,
+        codeUtils, tidyr, digest, sys, lubridate, jsonlite, whisker,
+        matrixStats, lazyeval
+Suggests: knitr, rmarkdown
+
 Package: lfe
 Version: 1.0-418
 Depends: Matrix, R (>= 2.10.1)
