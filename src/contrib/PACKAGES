@@ -143,11 +143,19 @@ Suggests: ggplot2, plotly,DiagrammeR
 MD5sum: f8effed3e795e117c6bc3d8724efc3c4
 NeedsCompilation: no
 
+Package: RelationalContracts
+Version: 0.2.0
+Depends: R (>= 3.5.0), restorepoint, dplyr, matrixStats,
+        RelationalContractsCpp, tidyr
+Suggests: ggplot2, plotly,DiagrammeR
+MD5sum: 24b11a42b415bf58a315776a945ac38c
+NeedsCompilation: no
+
 Package: RelationalContractsCpp
 Version: 0.1.0
 Imports: Rcpp (>= 1.0.0)
 LinkingTo: Rcpp
-MD5sum: 2463302ef6db06d5f42a1162fce09f38
+MD5sum: c93d26010d47913f16c6dd71e04b7b0e
 NeedsCompilation: yes
 
 Package: repgame
@@ -155,7 +163,7 @@ Version: 0.3
 Depends: restorepoint, rowmins, slam, glpkAPI
 Imports: Rcpp (>= 0.11.2)
 LinkingTo: Rcpp
-MD5sum: 1528f284910f4acc3d4eb8bb5ed9f205
+MD5sum: 81b543aa1976e9e3e48b0f84afd28e47
 NeedsCompilation: yes
 
 Package: restorepoint
@@ -198,7 +206,7 @@ Version: 0.1.0
 Depends: jsonlite, restorepoint
 Imports: Rcpp (>= 0.12.7)
 LinkingTo: Rcpp
-MD5sum: 6065de173f369371a05570e513db46e1
+MD5sum: 6d398c28c8d8a02007e153424e2d594d
 NeedsCompilation: yes
 
 Package: RTutor

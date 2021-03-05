@@ -20,6 +20,31 @@ Suggests: knitr, digest, igraph, plm, cubature (>= 2.0.3), numDeriv,
 License: Artistic-2.0
 Archs: i386, x64
 
+Package: RelationalContracts
+Version: 0.2.0
+Depends: restorepoint, dplyr, matrixStats,RelationalContractsCpp, tidyr
+Suggests: ggplot2, plotly,DiagrammeR
+
+Package: RelationalContractsCpp
+Version: 0.1.0
+Imports: Rcpp (>= 1.0.0)
+LinkingTo: Rcpp
+Archs: x64
+
+Package: repgame
+Version: 0.3
+Depends: restorepoint, rowmins, slam, glpkAPI
+Imports: Rcpp (>= 0.11.2)
+LinkingTo: Rcpp
+Archs: x64
+
+Package: RSGSolve
+Version: 0.1.0
+Depends: jsonlite, restorepoint
+Imports: Rcpp (>= 0.12.7)
+LinkingTo: Rcpp
+Archs: x64
+
 Package: RTutor
 Version: 2020.11.25
 Depends: shinyEvents,markdown,whisker, stringr, stringtools,
