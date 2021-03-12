@@ -25,6 +25,12 @@ Depends: DBI, restorepoint, yaml, stringtools
 MD5sum: d8ca2a20eea34fcdad2d09af480bfe79
 NeedsCompilation: no
 
+Package: dbmisc
+Version: 0.3
+Depends: DBI, restorepoint, yaml, stringtools, glue
+MD5sum: d2292dbb38e901504f9dc955b64befbc
+NeedsCompilation: no
+
 Package: ddsim
 Version: 0.1
 Depends: dplyr,restorepoint, stringtools, rmdtools, nleqslv, symbeqs,

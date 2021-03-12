@@ -1,3 +1,7 @@
+Package: dbmisc
+Version: 0.3
+Depends: DBI, restorepoint, yaml, stringtools, glue
+
 Package: gtree
 Version: 0.1.1
 Depends: restorepoint,stringtools, yaml, data.table,dplyr, dplyrExtras,

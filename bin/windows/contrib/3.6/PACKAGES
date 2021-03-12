@@ -2,6 +2,10 @@ Package: codeUtils
 Version: 0.1
 Depends: restorepoint
 
+Package: dbmisc
+Version: 0.3
+Depends: DBI, restorepoint, yaml, stringtools, glue
+
 Package: dplyrExtras
 Version: 0.1.3
 Depends: data.table,dplyr, dtplyr
