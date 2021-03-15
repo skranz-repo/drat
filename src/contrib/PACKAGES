@@ -28,7 +28,7 @@ NeedsCompilation: no
 Package: dbmisc
 Version: 0.3
 Depends: DBI, restorepoint, yaml, stringtools, glue
-MD5sum: d2292dbb38e901504f9dc955b64befbc
+MD5sum: 7a84f65a5fffe511168d066e7bfece16
 NeedsCompilation: no
 
 Package: ddsim
